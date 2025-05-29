@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria de Filmes Favoritos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .galeria a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Meus Filmes Favoritos</h1>
+
+  <div class="galeria">
+    <a href="https://pt.wikipedia.org/wiki/Interestelar_(filme)" target="_blank">
+      <img src="filme1.jpg" alt="Interestelar">
+    </a>
+    <a href="https://pt.wikipedia.org/wiki/Matrix" target="_blank">
+      <img src="filme2.jpg" alt="Matrix">
+    </a>
+    <a href="https://pt.wikipedia.org/wiki/Clube_da_Luta" target="_blank">
+      <img src="filme3.jpg" alt="Clube da Luta">
+    </a>
+    <a href="https://pt.wikipedia.org/wiki/O_Senhor_dos_An%C3%A9is:_A_Sociedade_do_Anel" target="_blank">
+      <img src="filme4.jpg" alt="Senhor dos Anéis">
+    </a>
+    <a href="https://pt.wikipedia.org/wiki/Cidade_de_Deus" target="_blank">
+      <img src="filme5.jpg" alt="Cidade de Deus">
+    </a>
+    <a href="https://pt.wikipedia.org/wiki/O_Cavaleiro_das_Trevas" target="_blank">
+      <img src="filme6.jpg" alt="O Cavaleiro das Trevas">
+    </a>
+  </div>
+
+</body>
+</html>
